@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de usuários</title>
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+    <script type=text/javascript> $(function() { $("#mybutton").click(function (event) { $.getJSON('/info', { },
+    function(data) { }); return false; }); }); </script>  -->
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de usuários</h2>
+        <form action="/" method="post">
+            <div class="input-field">
+                <input type="text" id="nome" placeholder="Chamado">
+                <label for="nome">Nome:</label>
+            </div>
+
+            <div class="input-field">
+                <input type="password" id="senha" placeholder="Tipo">
+                <label for="senha">Senha:</label>
+            </div>
+
+            <div class="input-field">
+                <input type="text" id="senha" placeholder="Quantidade">
+                <label for="senha">Chapa:</label>
+            </div>
+
+            <div class="input-field">
+                <input type="text" id="senha" placeholder="Filial">
+                <label for="senha">Função:</label>
+            </div>
+
+            <div class="input-field">
+                <input type="text" id="senha" placeholder="Solicitante">
+                <label for="senha">E-mail:</label>
+            </div>
+
+            
+            <div class="input-field">
+                <input type="text" id="senha" placeholder="Status">
+                <label for="senha">Setor:</label>
+            </div>
+
+            <div class="input-field">
+                <input type="text" id="senha" placeholder="Observacao">
+                <label for="senha">Centro de custo:</label>
+            </div>
+            
+            <div class="center">
+                <!-- <a href="info.html"><p>Cadastrar</p></a>  -->
+
+                <button>Cadastrar e Login</button>  
+            </div>
+        </form>
+    </div>
+</body>
+</html>

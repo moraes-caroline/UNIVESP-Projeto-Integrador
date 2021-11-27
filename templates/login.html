@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+    <script type=text/javascript> $(function() { $("#mybutton").click(function (event) { $.getJSON('/info', { },
+    function(data) { }); return false; }); }); </script> 
+
+    <script type=text/javascript> $(function() { $("#mybutton1").click(function (event) { $.getJSON('/info', { },
+        function(data) { }); return false; }); }); </script> 
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="/cadastro" method="post">
+            <div class="input-field">
+                <input type="text" id="nome" placeholder="Nome">
+                <label for="nome">Nome:</label>
+            </div>
+
+            <div class="input-field">
+                <input type="password" id="senha" placeholder="Senha">
+                <label for="senha">Senha:</label>
+            </div>
+
+            <div class="center">
+                <button>Entrar</button>
+            </div>
+        </form>
+        <div class="links-uteis">
+            <form action="/signup" method="post"></form>
+
+            <!-- <input type = "button" id = "mybutton" value = "Esqueceu a sua senha ?" />
+            <input type = "button" id = "mybutton1" value = "Ainda não sou cadastrado" /> -->
+            <!-- <a href=""><p>Esqueceu a sua senha ?</p></a> -->
+                <a href="/signup"><p>Ainda não sou cadastrado</p></a>
+        </div>
+    </div>
+</body>
+</html>
